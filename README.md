@@ -2,6 +2,10 @@
 
 This is a simple example of a form validation script using JavaScript. When a user submits the form, the script checks the input fields for various conditions and displays error messages.
 
+## Screenshot
+
+![Screenshot](screenshot.png)
+
 ## Features
 
 - Validates username, email, and password fields.
