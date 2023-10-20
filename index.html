@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="media/favicon.png" type="image/x-icon">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Simple script to validate and show errors in form.">
+    <meta name="keywords" content="form, css, html, js, javascript">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Contact Form</h1>
+            <h5>* labels are mandatory.</h5>
+            <form method=post action=# onsubmit="return validateForm()">
+                <label for="username">*Username:</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error" id="usernameError"></span>
+
+                <label for="email">*Email:</label>
+                <input type="text" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+
+                <label for="password">*Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="passwordError"></span>
+                <div class="buttons">
+                    <input type="submit" value="Send">
+                    <input type="reset" id="reset" value="Reset" onclick="resetErrors()">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
